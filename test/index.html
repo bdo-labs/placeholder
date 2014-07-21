@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Placeholder test</title>
+    <link rel="stylesheet" href="../build/build.css">
+    <script src="../build/build.js" defer></script>
+    <style>
+      html {
+        font-size: 62.5%;
+      }
+      body {
+        font-size: 1.6em;
+      }
+      html,
+      input,
+      textarea {
+        font-family: Helvetica;
+        color: rgb(120,120,120);
+      }
+      fieldset {
+        border: none;
+        margin: 0;
+        padding: 100px;
+      }
+    </style>
+  </head>
+  <body ng-app="placeholder">
+   <form ng-view>
+      <fieldset>
+        <input type="text" placeholder="First name" name="first_name">
+        <input type="text" placeholder="Last name" name="last_name">
+        <textarea placeholder="Description"></textarea>
+      </fieldset>
+    </form>
+  </body>
+</html>

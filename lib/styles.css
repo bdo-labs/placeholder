@@ -1,0 +1,58 @@
+.placeholder-wrapper {
+  position: relative;
+}
+
+.placeholder {
+  color: rgb(220,220,220);
+  font-size: .7em;
+  -webkit-transition: all .5s ease;
+  transition: all .5s ease;
+  opacity: 0;
+  padding-left: .7em;
+  position: absolute;
+  -webkit-transform: translateY(1.5em);
+  -ms-transform: translateY(1.5em);
+  transform: translateY(1.5em);
+  will-change: opacity,transform;
+}
+
+.placeholder.dirty {
+  -webkit-transform: translateY(.7em);
+  -ms-transform: translateY(.7em);
+  transform: translateY(.7em);
+  opacity: 1;
+  will-change: color;
+}
+
+.placeholder.focus {
+  color: rgb(46,129,183);
+}
+
+input,
+textarea {
+  appearance: none;
+  border-width: 0 0 1px 0;
+  border-style: solid;
+  border-color: rgb(230,230,230);
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  outline: none;
+  margin-top: 2em;
+  padding-bottom: .7em;
+  padding-left: .7em;
+  padding-right: .7em;
+  width: 100%;
+  -webkit-transition: border-color 1s ease;
+  transition: border-color 1s ease;
+}
+
+input:hover,
+textarea:hover {
+  will-change: border-color;
+}
+
+input:focus,
+textarea:hover {
+  border-color: rgb(200,200,200);
+}

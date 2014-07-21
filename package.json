@@ -1,0 +1,36 @@
+{
+  "name": "ng-placeholder",
+  "version": "0.0.0",
+  "description": "Slick form input placeholders",
+  "main": "lib/index.js",
+  "style": "lib/styles.css",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/bdo-labs/ng-placeholder.git"
+  },
+  "author": "Henrik Kjelsberg <henrik.kjelsberg@bdo.no>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/bdo-labs/ng-placeholder/issues"
+  },
+  "homepage": "https://github.com/bdo-labs/ng-placeholder",
+  "devDependencies": {
+    "atomify": "^3.1.6",
+    "handlebars": "^1.3.0",
+    "hbsfy": "^1.3.2",
+    "myth": "^1.1.1",
+    "resrcify": "^1.0.1"
+  },
+  "dependencies": {
+    "angular": "^1.2.19",
+    "format": "heavyk/format"
+  },
+  "atomify": {
+    "css": {
+      "entry": "lib/styles.css"
+    },
+    "js": {
+      "entry": "lib/index.js"
+    }
+  }
+}
