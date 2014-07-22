@@ -31,6 +31,9 @@ input[type="text"],
 input[type="email"],
 input[type="password"],
 input[type="url"],
+input[type="date"],
+input[type="datetime"],
+input[type="dateTimeLocal"],
 textarea {
   margin-bottom: 2.5em;
 }
