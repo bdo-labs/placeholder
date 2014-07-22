@@ -8,18 +8,17 @@
   -webkit-transition: all .5s ease;
   transition: all .5s ease;
   opacity: 0;
-  padding-left: .7em;
   position: absolute;
-  -webkit-transform: translateY(1.5em);
-  -ms-transform: translateY(1.5em);
-  transform: translateY(1.5em);
+  -webkit-transform: translateY(0px);
+  -ms-transform: translateY(0px);
+  transform: translateY(0px);
   will-change: opacity,transform;
 }
 
 .placeholder.dirty {
-  -webkit-transform: translateY(.7em);
-  -ms-transform: translateY(.7em);
-  transform: translateY(.7em);
+  -webkit-transform: translateY(-15px);
+  -ms-transform: translateY(-15px);
+  transform: translateY(-15px);
   opacity: 1;
   will-change: color;
 }
@@ -33,29 +32,5 @@ input[type="email"],
 input[type="password"],
 input[type="url"],
 textarea {
-  appearance: none;
-  border-width: 0 0 1px 0;
-  border-style: solid;
-  border-color: rgb(230,230,230);
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-  outline: none;
-  margin-top: 2em;
-  padding-bottom: .7em;
-  padding-left: .7em;
-  padding-right: .7em;
-  width: 100%;
-  -webkit-transition: border-color 1s ease;
-  transition: border-color 1s ease;
-}
-
-input:hover,
-textarea:hover {
-  will-change: border-color;
-}
-
-input:focus,
-textarea:hover {
-  border-color: rgb(200,200,200);
+  margin-bottom: 2.5em;
 }

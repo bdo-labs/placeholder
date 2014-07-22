@@ -7,23 +7,57 @@
     <link rel="stylesheet" href="../build/build.css">
     <script src="../build/build.js" defer></script>
     <style>
+
       html {
         font-size: 62.5%;
       }
       body {
         font-size: 1.6em;
       }
+
       html,
       input,
       textarea {
         font-family: Helvetica;
         color: rgb(120,120,120);
       }
+
       fieldset {
         border: none;
         margin: 0;
         padding: 100px;
       }
+
+      input[type="text"],
+      input[type="email"],
+      input[type="password"],
+      input[type="url"],
+      textarea {
+        -webkit-appearance: none;
+        appearance: none;
+        border-width: 0 0 1px 0;
+        border-style: solid;
+        border-color: rgb(230,230,230);
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        outline: none;
+        padding-bottom: .7em;
+        width: 100%;
+        -webkit-transition: border-color 1s ease;
+        transition: border-color 1s ease;
+      }
+
+      input:hover,
+      textarea:hover {
+        will-change: border-color;
+      }
+
+      input:focus,
+      textarea:hover {
+        border-color: rgb(200,200,200);
+      }
+
     </style>
   </head>
   <body ng-app="placeholder">
