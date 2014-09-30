@@ -1,0 +1,10 @@
+{
+  "name": "placeholder",
+  "repo": "bdo-labs/placeholder",
+  "version": "0.0.1",
+  "main": "lib/index.js",
+  "scripts": ["lib/index.js"],
+  "dependencies": {
+    "bdo-labs/format": "master"
+  }
+}
